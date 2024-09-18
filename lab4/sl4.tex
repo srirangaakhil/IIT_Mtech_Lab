@@ -1,0 +1,231 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{bera}
+
+\newcommand*{\qcr}{\fontfamily{qcr}\selectfont}
+
+\begin{document} 
+
+\begin{titlepage}
+\centering
+    \vspace*{\fill}
+
+    
+    \Huge \textbf{Software Lab 4:\\TeX Lab}
+    
+    \vspace*{0.6cm}
+    
+    \LARGE{Diptesh Kanojia - Title Page}
+    \vspace*{0.4cm}
+
+    \Large{21st August, 2019}
+    \vspace*{4.0cm}
+
+    \vspace*{\fill}
+\end{titlepage}
+
+\setcounter{page}{1}
+\tableofcontents
+
+\clearpage
+
+\section{About Me}
+Hello, my name is Amit Jaiswal. You are probably wondering what
+kind of a narcissist uses his own name as the title of a document - in
+my defense, a lazy one! I am currently pursuing M.Tech. in Computer Science. This is a \LaTeX{} document for the course \textbf{Software Lab} with course code \emph{CS699}. I would like for this document to be typesetted perfectly which forces me to you use \LaTeX{}. \LaTeX{} uses various packages. I will elaborate about them in the following subsections:
+
+\subsection{graphicx package}
+This package is used to import tables, and figure in the document. Our
+document type is article, and we are currently using 11pt font size, with
+a4 type paper, which is specified in the beginning in $<$documentclass$>$.
+
+\subsection{amssymb package}
+This package is used to import mathematical symbols in the document.
+We encapsulate the mathematical equations and symbols under \$, and
+they are changed to maths symbols.
+
+\section{Some History}
+I am ancient creature dwelling on this planet now referred to as 'Earth'.
+I have been existing since the past $150393894.5$ years. Do you see the
+use of a package above in the number mention in the document. I
+have used something to enunciate the numbers in a fashion such as a
+mathematical formulae.
+
+Let us all try to replicate the text provided in this document.
+
+\textit{P.S.: Please note that I am following the Section Title \textbf{Noun Capitalization} in the document. This would be followed in the rest of the
+document, henceforth.}
+
+\clearpage
+
+\section{Replication of this must be produced}
+\textbf{LaTeX} is a word processor and document markup language. It is distinguished from typical word processors such as Microsoft Word and
+Apple Pages in that the writer uses plain text as opposed to formatted text, relying on markup tagging conventions to define the general
+structure of a document (such as article, book, and letter), to stylise
+text throughout a document (such as \textbf{bold} and \textit{italic}), and to add citations and 
+crossreferencing. A \textbf{TeX} distribution such as \textbf{TeXlive} or
+\textbf{MikTeX} is used to produce an output file (such as PDF or DVI) suitable
+for printing or digital distribution.
+\\*
+
+\textbf{LaTeX} is used for the communication and publication of scientific
+documents in many fields, including mathematics, physics, computer
+science, statistics, economics, and political science. It also has a prominent role in the preparation and publication of books and articles that
+contain complex multilingual materials, such as Sanskrit and Arabic. 
+\textbf{LaTeX} uses the TeX typesetting program for formatting its output, and
+is itself written in the TeX macro language.
+\\*
+
+\textbf{LaTeX} is widely used in academia. \textbf{LaTeX} can be used as a standalone document preparation system, or as an intermediate format. In
+the latter role, for example, it is often used as part of a pipeline for
+translating DocBook and other XML-based formats to PDF. The typesetting system offers programmable desktop publishing features and
+extensive facilities for automating most aspects of typesetting and desktop publishing, including numbering and cross-referencing of tables
+and figures, chapter and section headings, the inclusion of graphics,
+page layout, indexing and bibliographies.
+\\*
+
+Like \textbf{TeX}, \textbf{LaTeX} started as a writing tool for mathematicians and
+computer scientists, but from early in its development it has also been
+taken up by scholars who needed to write documents that include complex math expressions or non-Latin scripts, such as Arabic, Sanskrit and Chinese.
+\\*
+
+\textbf{LaTeX} is intended to provide a high-level language that accesses the
+power of \textbf{TeX}. \LaTeX{} comprises a collection of TeX macros and a program
+to process \textbf{LaTeX} documents. Because the plain \textbf{TeX} formatting commands are elementary, it provides authors with ready-made commands for formatting and layout requirements such as chapter headings, foot-notes, cross-references and bibliographies.
+\\*
+
+\textbf{LaTeX} was originally written in the early 1980s by Leslie Lamport at
+SRI International. The current version is LaTeX2e. \textbf{LaTeX} is free software and is distributed under the \textbf(LaTeX) Project Public License (LPPL)
+\textbf{(Source Wikipedia)}.
+
+\section{Opening and Compiling Tex Document}
+
+First create a \textbf{.tex} file using text editor such as \textbf{Vi} or \textbf{Gedit} or \textbf{Kile}.
+
+\section{Starting and Ending}
+
+A minimal input file looks like following
+\textbf{\qcr \large
+\newline \newline
+\hspace*{1cm}\textbackslash documentclass\{class\}
+\\*
+\hspace*{1cm}\textbackslash \{document\}
+\\*
+\hspace*{1.8cm}your text...
+\\*
+\hspace*{1cm}\textbackslash end \{document\}
+}
+\newline \newline
+where the class is a valid document class for \textbf{LaTeX}.
+
+\subsection{Compiling the LaTeX Document}
+
+We open the terminal and go to the directory in which our .tex file is
+stored and the we execute the command\\
+
+\textbf{pdflatex example.tex}
+
+\clearpage
+
+\section{Section}
+Sectioning commands provide the means to structure your text into
+\\*
+units:
+\\~\\
+\newline
+{\qcr \large \textbackslash{}\textbf{part}
+\\~\\
+\textbackslash{}\textbf{chapter}
+\\~\\
+\textbf{(report and book class only)}
+\\~\\
+\textbackslash{}\textbf{section}
+\\~\\
+\textbackslash{}\textbf{subsection}
+\\~\\
+\textbackslash{}\textbf{subsubsection}
+\\~\\
+\textbackslash{}\textbf{paragraph}
+\\~\\
+\textbackslash{}\textbf{subparagraph}\\
+}
+\\*
+\hspace*{0.5cm}All sectioning commands take the same general form, e.g.,
+\\~\\
+\hspace*{2cm}\textbackslash{}\textbf{\qcr \large chapter[toctitle]\{title\}}
+\\~\\
+\hspace*{0.5cm}In addition to providing the heading title in the main text, the section
+\\*
+title can appear in two other places:
+\begin{enumerate}
+  \item The table of contents.
+  \item The running head at the top of the page.
+\end{enumerate}
+\hspace{0.5cm}You may not want the same text in these places as in the main text.
+To handle this, the sectioning commands have an optional argument
+toctitle that, when given, specifies the text for these other places.
+\\~\\
+\hspace{0.5cm}Also, all sectioning commands have *-forms that print title as usual,
+butdo not include a number and do not make an entry in the table of
+contents.
+\\~\\
+\hspace*{0.5cm}For instance:
+\\~\\
+\hspace*{2cm}\textbackslash{}\textbf{\qcr \large section*\{Preamble\}}
+\\~\\
+\hspace*{0.5cm}The \textbackslash{}\textbf{appendix} command changes the way following sectional units
+are numbered. The \textbackslash{}\textbf{appendix} command itself generates no text and
+does not affect the numbering of parts.
+\\~\\
+\hspace*{0.5cm}The normal use of this command is something like
+\\~\\
+{\qcr \large
+\hspace*{2cm}\textbackslash{}\textbf{chapter\{A Chapter\}}
+\\
+\hspace*{2cm}...
+\\
+\hspace*{2cm}\textbackslash{}\textbf{appendix}
+\\
+\hspace*{2cm}\textbackslash{}\textbf{chapter\{The First Appendix\}}
+}
+\\~\\
+\hspace{0.5cm}The secnumdepth counter controls printing of section numbers. The
+setting suppresses heading numbers at any depth $>$ level, where chapter is level zero.
+\\~\\
+\hspace*{2cm}\textbackslash{}\textbf{\qcr \large setcounter\{secnumdepth\}\{level\}}
+
+\section{Cross Reference}
+One reason for numbering things like figures and equations is to refer
+the reader to them, as in “Section 6 on Page 5 for more details”. {\Large I
+have referred to a section, and a page here here.}
+\subsection{\textbackslash label\{key\}}
+
+A \textbackslash label command appearing in ordinary text assigns to key the number
+of the current sectional unit; one appearing inside a numbered environ-
+ment assigns that number to key.
+\par
+A key name can consist of any sequence of letters, digits, or punctu-
+ation characters. Upper and lowercase letters are distinguished.
+\par
+To avoid accidentally creating two labels with the same name, it is
+common to use labels consisting of a prefix and a suffix separated by a
+colon or period. Some conventionally-used prefixes:
+\newline
+{\bf ch}\qquad for chapters \newline
+{\bf sec}\qquad for lower-level sectioning commands \newline
+{\bf fig}\qquad for figures \newline
+{\bf tab}\qquad for tables \newline
+{\bf eq}\qquad for equations \newline
+
+{\Huge I think we have replicated the document enough. Let us just concentrate on learning features of the
+document provided to us. We have
+successfully demonstrated the the
+features such as Sections, Subsec-
+tions, Labelling, Bold, Italics, Tab-
+bing, Title Page, Huge, Large, math
+symbols. Typing in a \LaTeX{} document
+to type in \textbf{LaTeX} code.}
+\newline
+\par Let us leave the rest of \LaTeX{} for the out-lab.
+
+\end{document}

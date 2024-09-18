@@ -1,0 +1,258 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{bera}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\graphicspath{ {./images/} }
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{caption} 
+\captionsetup[table]{skip=20pt}
+\usepackage[export]{adjustbox}
+\captionsetup{%
+    format=plain,%
+    textformat=period,
+    justification=RaggedRight,
+    singlelinecheck=true,
+}%
+
+\newcommand*{\qcr}{\fontfamily{qcr}\selectfont}
+
+\begin{document} 
+
+\begin{titlepage}
+\centering
+    \vspace*{\fill}
+    
+    \vspace*{2.4cm}
+
+    \Huge \textbf{Software Lab 4:\\TeX Lab}
+
+    \vspace*{0.8cm}
+
+    \LARGE{Diptesh Kanojia}
+    \vspace*{0.5cm}
+
+    \large{21st August, 2019}
+    \vspace*{4.0cm}
+
+    \vspace*{\fill}
+\end{titlepage}
+
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=\textwidth,height=\textwidth,keepaspectratio]{LifePray.png}
+    \caption{Flowchart of a theist Life}
+    \label{fig:lifepray}
+\end{figure}
+
+\normalfont
+Figure \ref{fig:lifepray} above refers to a funny conundrum theists are believed to be living in by the atheists. This is just a joke I picked up from some forum, not taking sides, not even a bit. This is how scared social media has made us, We can not pick sides. Moving on . . . . You need to know how to cite papers in \LaTeX{}. For e.g. you are talking about research on Indowordnet \cite{pushpak2017}, in that case such a citation must be used near a name. In case you need to quote the authors of a paper in a statement, instead of citing them against a topic or word or a line, you need to use a different kind of citation methodology.
+
+\newpage
+\begin{table}[t!]
+    \centering
+    \caption{Table depicting the use of both multirow and multicoulumn}
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+         \cline{3-11}
+         \multicolumn{2}{c}{} &
+         \multicolumn{5}{|c|}{\textbf{Basic Properties}} &
+         \multicolumn{4}{|c|}{\textbf{Readability}}  
+         \\
+         \cline{3-11}
+         \multicolumn{2}{c|}{} &
+         \textbf{WC} &
+         \textbf{SC} & 
+         \textbf{C-W} & 
+         \textbf{S-W} & 
+         \textbf{W-S} & 
+         \textbf{FK} & 
+         \textbf{GF} & 
+         \textbf{SMOG} & 
+         \textbf{LEX}
+         \\ 
+         \hline
+         \multirow{2}{5em}{\textrm{\textit{Baseline}}} &
+         Mean & 
+         0.84 &
+         0.41 & 
+         \textbf{0.56} &
+         \textbf{0.46} &
+         \textbf{0.55} &
+         \textbf{0.60} &
+         0.56 &
+         0.57 &
+         0.63
+         \\ \cline{2-11} &
+         SD &
+         0.07 &
+         0.08 &
+         0.06 &
+         0.07 &
+         0.05 &
+         0.05 &
+         0.06 &
+         0.07 &
+         0.05
+         \\ 
+         \hline
+         \hline
+         \multirow{2}{5em}{\textrm{\textit{ScaComp$_h$}}} &
+         Mean & 
+         0.89 &
+         0.46 & 
+         0.53 &
+         0.43 &
+         0.53 &
+         0.58 &
+         0.54 &
+         0.56 &
+         0.62
+         \\ \cline{2-11} &
+         SD &
+         0.05 &
+         0.08 &
+         0.05 &
+         0.06 &
+         0.06 &
+         0.05 &
+         0.05 &
+         0.06 &
+         0.05 
+         \\
+         \hline
+         \hline
+         \multirow{2}{5em}{\textrm{\textit{ScaComp$_l$}}} &
+         Mean & 
+         \textbf{0.92} &
+         \textbf{0.48} & 
+         0.55 &
+         0.45 &
+         0.53 &
+         0.59 &
+         \textbf{0.58} &
+         \textbf{0.61} &
+         \textbf{0.64}
+         \\ \cline{2-11} &
+         SD &
+         0.04 &
+         0.07 &
+         0.05 &
+         0.04 &
+         0.05 &
+         0.04 &
+         0.04 &
+         0.04 &
+         0.04 
+         \\
+         \hline
+        \end{tabular}%
+}
+    \label{table:meanSD}
+\end{table}
+
+To combine rows a package must be imported with in your preamble,
+then you can use the XXXXXXX command in your document, I did it. The
+table below includes mathematical notations, which you can produce
+by embedding the experession in \$ \$ delimiters. For subscript, use
+underscore and for superscript, use carrot.
+
+\bigskip
+{\Large 
+In table \ref{table:meanSD} above, we try to demonstrate all the
+features required to be demonstrated in a table. We use multiple newline, we use a package to enable the use of multiple rows, and multiple columns
+in the table. Additionally, We have also drawn
+lines from specific column to column. We also use
+box resizing with a width specifier for resizing the
+box within the limits of the document, and avoid
+any overflow.
+}
+
+\bigskip
+Now, we will import images side by side in the same document.
+
+
+\newpage
+
+
+\begin{figure}[h]
+\begin{minipage}{0.48\textwidth}
+	\centering
+	\includegraphics[width=0.8\textwidth]{and1.jpg}
+	\caption{Screenshot: Mobile Interface}
+	\label{fig:and1 }
+\end{minipage}%
+	\begin{minipage}{0.48\textwidth}
+	\centering
+	\includegraphics[width=0.8\textwidth]{and2.jpg}
+	\captionsetup{width=1\linewidth}%
+	\captionsetup{singlelinecheck=false}%
+	\caption{Screenshot: Generated Notification}
+        \label{fig:and1 }
+\end{minipage}
+\end{figure}
+The images have been put in, and they are side by side in the same
+document on the same page. We have used the package floatrow and
+graphicx to import images on Page 3. The images are from an Android
+application I made for a project last semester. The table above are
+values from an experiment we are doing in our lab. I am adding an
+mathematical equation now just for the sake of it, because I think this
+is the only thing left to be demonstrated.
+\begin{equation}\label{eq:1}
+ NLL=-\sum_{i=1}^{N} log (P(s))
+\end{equation}
+where $s_i$ is the length of the $i^{th}$ saccade.
+\\~\\
+\hspace*{0.6cm}This text will refer to Equation \ref{eq:1} above. In case you would like to
+see an alternative method to align the images, for instance images as
+subfigures, let me try to do it.
+\newpage
+
+\begin{figure}[h]
+\begin{subfigure}[h]{0.5\textwidth}
+\centering
+\includegraphics[width=5cm, height=3cm]{img1} 
+\caption{Caption1}
+\label{fig:subim1}
+\end{subfigure}
+\begin{subfigure}[h]{0.5\textwidth}
+\centering
+\includegraphics[width=5cm, height=3cm]{img2}
+\caption{Caption 2}
+\label{fig:subim2}
+\end{subfigure}
+\caption{Caption for this figure with two images}
+\label{fig:image2}
+\end{figure}
+
+This is another alternative to posting images in a \LaTeX{} Document, although you would still want me to put them in a table, since ‘The Document’ had them in a table. Let me try to do that.
+
+\begin{table}[h]
+\caption{Table with images, finally!}
+\begin{tabular}{ c c }
+\includegraphics[width=0.5\textwidth]{img3}
+&
+\includegraphics[width=0.5\textwidth]{img3}
+\\
+\includegraphics[width=0.5\textwidth]{img4}
+&
+\includegraphics[width=0.5\textwidth]{img4}
+\\
+\end{tabular}
+\end{table}
+
+Now, that we have all the possible ways multiple images can be
+aligned in the table. We will conclude this document with the final
+section.
+
+\clearpage
+
+\section*{Conclusion}
+This document comprehensively demonstrated the capabilities of \LaTeX{} as a document typesetting / desktop publishing package. We have used various font size / family settings, we have used verbatim to display Latex code in a latex document, image settings, sections, subsections, references using labels, mathamatical equations, notations, use of ‘dia’ for creating a diagram / flowchart etc. I hope this suffices the need of learning basic \LaTeX{}. I hope you also notice that the last section i.e. Conclusion on Page 5 is unnumbered and displays the use of something.
+
+\bibliographystyle{plain}
+\bibliography{sl4.bib} 
+
+\end{document}

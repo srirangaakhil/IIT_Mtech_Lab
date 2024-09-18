@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+// this is a dummy function
+	// testing the sed commands.
+	
+	int x = 6;
+	/* logic starts from here*/
+	
+	x = x + 5;
+/* end of c asdasd*/
+
+}
