@@ -1,0 +1,369 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{bera}
+\usepackage{geometry}
+\geometry{a4paper, portrait, margin=1.1in}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[noeepic]{qtree}
+\usepackage{todonotes}
+\usepackage[shortlabels]{enumitem}
+\usepackage{framed}
+\usepackage{epigraph}
+\usepackage{algorithmic}
+\usepackage{algorithm2e}
+\usepackage{url}
+\usepackage{bm}
+\usepackage{listings}
+\usepackage{xcolor}
+\renewcommand{\labelitemi}{$\bullet$}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\lstdefinestyle{color}{
+  basicstyle=\color{black},
+  moredelim=**[is][\color{blue}]{#}{#},
+  moredelim=**[is][\color{green}]{@ }{@}
+}
+\begin{document}
+
+
+\begin{titlepage} 
+    \centering     
+    \vspace*{3.5cm}         
+    
+    \vspace*{2.4cm}     
+ 
+    \Huge \textbf{Software Lab: OutLab\\Advanced \LaTeX}     
+ 
+    \vspace*{0.8cm}     
+ 
+    \LARGE{Pm9}
+     
+    \large{19305R009} \\
+    \large{193050055}
+     
+    \large{193050023}
+    \vspace*{0.5cm}     
+ 
+    \large{28st August, 2019}     
+    \vspace*{4.0cm}     
+ 
+    \vspace*{\fill} 
+\end{titlepage}
+\setcounter{page}{1} 
+\tableofcontents 
+
+\newpage
+
+You need to replicate the document
+
+\section{Do this}
+
+
+\begin{itemize}
+
+\item \LaTeX{} typesets a file of text using the TEX program.
+\\
+\item \LaTeX{} is widely used in academia for the communication and publication
+of scientific documents in many fields, including mathematics, physics,
+computer science, statistics, economics and political science.
+\\
+\item \LaTeX{} can be used as a standalone document preparation system or as an
+intermediate format.
+\\
+\item \textbf{Have used renewcommand for the bullets to be bigger.}
+\\
+\item look at the item separation space, and change it accordingly
+
+\end{itemize}
+
+\begin{enumerate}[I]
+
+\item \LaTeX{} typesets a file of text using the TEX program.
+
+\item \LaTeX{} is widely used in academia for the communication and publication
+of scientific documents in many fields, including mathematics, physics,
+computer science, statistics, economics and political science.
+
+\item \LaTeX{} can be used as a standalone document preparation system or as an
+intermediate format.
+
+\item \LaTeX{} is intended to provide a high-level language that accesses the power
+of TeX in an easier way for writers.
+
+\end{enumerate}
+
+\begin{enumerate}[label=(\alph*)]
+
+\item \LaTeX{} typesets a file of text using the TEX program.
+
+\item \LaTeX{} is widely used in academia for the communication and publication
+of scientific documents in many fields, including mathematics, physics,
+computer science, statistics, economics and political science.
+
+\end{enumerate}
+
+\newpage
+
+\section{Mathematical formulas and notations}
+
+\subsection{Equation Array}
+     \begin{align}
+     \cos^3{\theta} + \sin^3{\theta} &= (\cos{\theta} + \sin{\theta})(\cos^2{\theta} - \cos{\theta}\sin{\theta}) \\
+    &= (\cos{\theta} + \sin{\theta})(1 - \cos{\theta}\sin{\theta}) \\
+    &= (\cos{\theta} + \sin{\theta})(1 / 2)(2 - 2\cos{\theta}\sin{\theta}) \\
+    &= (1 / 2)(\cos{\theta} + \sin{\theta})(2 - \sin{(2\theta)})
+     \end{align}
+ 
+
+\subsection{Prepositional Formulae using Various Operators}
+
+ 
+\vspace*{0.5cm}
+\hspace*{0.5cm}
+$(\exists)(\boldsymbol{\varphi}(x)\wedge\boldsymbol{\psi}(x))\leftrightarrow((\exists x)\boldsymbol{\varphi}(x)\wedge(\exists x)\boldsymbol{\psi}(x))$
+\vspace*{0.5cm}
+\hspace*{0cm}
+
+$((\forall x)\boldsymbol{\varphi}(x)\wedge(\forall x)\boldsymbol{\varphi}(x))\rightarrow(\forall x)(\boldsymbol{\psi}(x)\wedge\boldsymbol{\psi}(x)))$
+\vspace*{0.5cm}
+\hspace*{0cm}
+
+${(\exists)(\boldsymbol{\varphi}(x)\wedge\boldsymbol{\psi}(x))\rightarrow((\exists x)\boldsymbol{\varphi}(x)\wedge(\exists x)\boldsymbol{\varphi}(x)\wedge(\exists x)\boldsymbol{\psi}(x)) }$
+
+ 
+\subsection{Alphabets}
+\vspace*{0.5cm}
+\begin{center}
+   \begin{tabular}{|c|c|}
+	\hline
+     Binary Operators & $\times \otimes \oplus \cup \cap$ \\
+	& \\
+	\hline
+     Relation Operators & $\subset \supset \subseteq \supseteq < >$ \\
+	& \\	
+	\hline
+     Others: & $\int \oint \Sigma \Pi$ \\
+	& \\	
+	\hline
+   \end{tabular}
+\end{center}
+\vspace*{0.5cm}
+\subsection{Mathematical Formulae}
+     \begin{enumerate}
+     %\begin{flalign*}% left aligned
+     \item $\displaystyle\int_{a}^{b} x^3 dx = \frac{1}{4}x^4\bigg|_{a}^{b}$
+     
+     \item $\displaystyle\frac{\pi}{4} = 4 \sum_{n=1}^{\infty}\frac{(-1)^n}{(2n + 1)5^{2n+1}} - \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n + 1)239^{2n+1}}$
+     
+     \item $\displaystyle\pi = \frac{3\sqrt{3}}{4} - 24 \sum_{n=0}^{\infty}\frac{\frac{(2n)!}{(n)}}{2n + 1(2n + 1)4^{2n+1}}$
+     
+    \newpage
+     
+     \item $\displaystyle \frac{1}{\pi} = \frac{2\sqrt{2}}{9801}\sum_{n=0}^{\infty}\frac{(4n)!(1103 + 26390n)}{(n)!^{4}396^{4n}}$
+     
+     \item $\sum_{i=1}^{[\frac{n}{2}]}$ $\displaystyle{{x_{i,i+1}^{i^2}}\choose [\frac{i+3}{3}]} \frac{\sqrt{\mu(i)^{\frac{3}{2}} (i^2 - 1)}}{\sqrt[3]{\rho(i)-2} + \sqrt[3]{\rho(i)-1}}$
+     
+     \item $\lim_{{(v,v')}\to{(0,0)}}$ $\displaystyle\frac{H(z+v) - H(z+v') - BH(z)(v-v')}{\norm{v-v'}}$
+
+     \item $det \textbf{K}(t=1,t_1,...,t_n) = \sum_{I\in n}(-1)^{|I|}\prod_{i\in I}t_i\prod_{j\in I}(D_j+\lambda_j t_j) det\textbf{A}^{(\lambda)}(\overline{I}|\overline{I}) = 0$
+     %\end{flalign*}
+     
+     \end{enumerate}
+     $\frac{4}{\pi^2}=\frac{4\sqrt{2}}{\pi}\sum\limits_{n=0}^{\infty} \frac{(2n)!}{6^{4n}}$
+
+{
+
+\section{Quotation and Citation}
+\subsection{Quotation}
+The margins of the quotation environment are indented on both the left and the
+right. The text is justified at both margins. Leaving a blank line between text
+produces a new paragraph. The package \textbf{csquotes} offers a multilingual solu-
+tion to quotations, with integration to citation mechanisms offered by BibTeX.
+This package allows one for example to switch languages and quotation styles
+according to babel language selections.
+\\
+
+\setlength{\leftskip}{1cm}
+\setlength{\rightskip}{1cm}
+
+{“Unlike the quote environment, each paragraph is indented normally. It’s important to remark that even if you are typing quotes on English there are different quotation marks used in English (UK) and English (US).”}
+
+\setlength{\leftskip}{0cm}
+\setlength{\rightskip}{0cm}
+
+\subsection{Citation}
+Latex\cite{firuza_aibara} is a document preparation system for typesetting program. It is used
+to create different types of document structures. A Latex file (.tex) is created
+using any text editor (vim, emacs, gedit, etc.). There are also many LaTeX IDEs
+like Kile, TexStudio, etc.. The Latex code is then compiled which creates a
+standard (.pdf) file. Thus, the presentation of the document does not change on
+different machines.
+
+Type style\cite{latex_leslie} is used to indicate logical structure. Emphasized text appears in
+italic style type and input in typewriter style. Type style is specified by three
+components: shape, series, and family.
+
+\newpage
+There are two ways of producing a bibliography\cite{latex_hopka}. You can either produce
+a bibliography by manually listing the entries of the bibliography or producing
+it automatically using the BibTeX program of LaTeX. The bibliography style can
+be declared with bibliographystyle command, which may be issued anywhere
+after the preamble. The style is a file with .bst extension that determines how
+bibliography entries will appear at the output, such as if they are sorted or not,
+or how they are labeled etc. The extension .bib is not written explicitly. There
+are many standard bibliography style files. Two of them that are compatible
+with IIT thesis manual are plain.bst and alpha.bst. They are part of the LaTeX
+package; a student does not need to download it. The plain.bst and alpha.bst
+styles are explained below. The symbols in a math formula fall into different
+classes that correspond more or less to the part of speech each symbol would
+have if the formula were ex pressed in words. Certain spacing and position-
+ing cues are traditionally used for the different symbol classes to increase the
+readability of formulas. \cite{latex_michael}
+
+My citations are in proper order as per references ref1, ref2, ref3, and ref4.
+
+\newpage
+\section{Algorithm and Pseudo Code}
+\subsection{Listing}
+
+\hrulefill
+\large{
+\begin{lstlisting}[style=color]
+@// Breadth First Search Function@
+#void# BFS(list<#long long int#> queue ,#long long int# length
+    ){
+     #long long int# v;
+     #if#(queue.empty())
+         #return#;
+     list<#long long int#>::iterator i;
+     list<#long long int#> queue_temp ;
+     #while# (!queue.empty()){
+         v=queue.front();
+         queue.pop_front();
+         #for#(i=adj[v].begin();i!=adj[v].end();i++){
+             #if#(!pro_ver[*i]){
+                 result[*i]=length;
+                 queue_temp.push_back(*i);
+                 pro_ver[*i]=#true#;
+                 adj[*i].remove(v);
+             }
+         }
+     }
+     BFS(queue_temp,length+1) ;
+}
+\end{lstlisting}}
+\hrulefill
+\newpage
+
+\subsection{Verbatim}
+ \large{
+\begin{verbatim}
+//Breadth First Search Function
+void BFS(list<long long int> queue,long long int length){
+    long long int v;
+    if(queue.empty())
+        return;
+    list<long long int>::iterator i;
+    list<long long int> queue_temp;
+    while(!queue.empty()){
+        v=queue.front();
+        queue.pop_front();
+
+        for(i=adj[v].begin();i!=adj[v].end();i++){
+            if(!pro_ver[*i]){
+                result[*i]=length;
+                queue_temp.push_back(*i);
+                pro_ver[*i]=true;
+                adj[*i].remove(v);
+            }
+        }
+    }
+    BFS(queue_temp,length+1);
+}
+\end{verbatim}
+}
+\clearpage
+
+
+
+\subsection{Algorithmic}
+{
+\begin{algorithm}
+\begin{framed}
+\SetKwFunction{BFS}{Breadth-First-Search}
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\SetKwProg{Func}{}{}{}
+
+\Input{A graph Graph and a starting vertex root of Graph}
+\Output{All vertices’s reachable from root labeled as explored.}
+\Func {
+    \BFS{Graph, root}:\\
+    \For{each node n in Graph} {
+        {n.\textbf{distance} = INFINITY} \\
+        {n.\textbf{parent} = NIL}
+    }
+    {create empty \textbf{queue} Q} \\
+    {root.\textbf{distance} = 0} \\
+    {Q.\textbf{enqueue}(root)} \\
+    \While{Q is not empty} {
+    current = Q.dequeue()\\
+    \For{each node n that is ad jacent to current}{
+        \If{n.\textbf{distance} == INFINITY} {
+            {n.\textbf{distance} = current.\textbf{distance} + 1} \\
+            {n.\textbf{parent} = current} \\
+            {Q.\textbf{enqueue}(n) }
+        }
+    }
+}
+}
+
+\end{framed}
+
+\caption{Breadth-First-Search}
+\end{algorithm}
+}}
+\section{Tree}
+
+\Tree[.pm9 [.Amit sed awk ] [.Akhil [.HTML css ] latex linux ] [.Shivam [.bash bashrc ] git ] ]
+ 
+\textbf{\small Here, you need to Build your family tree apart from the tree shown.
+The next part of the tree assignment requires you to build your family
+tree upto level 3 i.e. if you are a leaf node at the third level, your parents
+and their siblings are level 2, their parents are level 1. In case you do not know names, of someone in family tree, please assume. This will be
+manually evaluated}
+
+
+\section{Exotic Features}
+
+\subsection{Epigraph Style}
+
+{\textbf{Chapter 1: Theory of life}}
+
+\epigraph{\textit{“failure will never overtake me if
+my determination to succeed is
+strong enough.”}}{\textit{og mandino}}
+
+\subsection{Minipage}
+
+\fbox{
+\begin{minipage}{0.46\textwidth}
+\textit{\small
+\LaTeX{} typesets a file of text using the TEX program and the \LaTeX{} “macro package” for TEX. That is, it processes an input file containing the text of a document with interspersed commands that describe how the text should be formatted. \LaTeX{} files are plain text that can be written in any reasonable editor. In the
+\LaTeX{} input file, a command name starts with a followed by either (a) a string of
+letters or (b) a single non-letter. Arguments contained in square brackets, [],
+are optional while arguments contained in braces, \{\}, are required. \LaTeX{} is case
+sensitive. Enter all commands in lower case unless explicitly directed to do otherwise.
+}
+\end{minipage}
+}
+
+
+
+
+\clearpage
+ \section{Bibliography}
+ \bibliographystyle{unsrt}
+ \bibliography{sl5-doc} 
+
+\end{document}

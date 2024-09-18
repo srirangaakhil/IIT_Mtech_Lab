@@ -1,0 +1,92 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{enumerate items}[square]
+
+\defbeamertemplate*{headline}{mytheme}
+{
+   \leavevmode
+   
+   \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,left]{author in head/foot}
+     \usebeamerfont{author in head/foot}\hspace{0.2cm} \insertsectionhead
+   \end{beamercolorbox}
+
+   \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,left]{title in head/foot} \end{beamercolorbox}
+    
+   \vskip0pt
+}
+
+\defbeamertemplate*{footline}{mytheme}
+{
+   \leavevmode
+
+   \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}
+     \usebeamerfont{title in head/foot}\hspace{0.2cm} \insertshortauthor
+   \end{beamercolorbox}
+   
+   \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}
+     \usebeamerfont{author in head/foot}\hspace{0.2cm} \insertshorttitle
+   \end{beamercolorbox}
+    
+   \vskip0pt
+}
+
+\usebeamertemplate{mytheme}
+
+\title{CS699: Software Lab}
+\subtitle{\LaTeX{} Advanced}
+\author{pm9\\
+Shivam Sood\\
+Amit Jaiswal\\
+Akhil Dadi}
+\institute{Indian Institute of Technology, Bombay}
+\date{\today}
+
+\begin{document}
+\logo{\includegraphics[width=1cm]{iitb} \hspace{0.15cm} \vspace{0.3cm}}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+\setbeamertemplate{logo}{}
+\logo{\includegraphics[width=.9cm]{iitb} \vspace{0.2cm}}
+
+\section{Itemize and Enumerate}
+
+\begin{frame}
+\frametitle{Itemize}
+\begin{itemize}
+\item \LaTeX{} typesets a file of text using the TEX program.
+\item \LaTeX{} is widely used in academia for the communication and publication of scientific documents in many fields, including mathematics, physics, computer science, statistics, economics and political science.[? ]
+\item \LaTeX{} can be used as a standalone document preparation system or as an intermediate format.
+\item \LaTeX{} is intended to provide a high-level language that accesses the power of TeX in an easier way for writers.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Enumerate}
+\begin{enumerate}
+\item \LaTeX{} typesets a file of text using the TEX program.
+\item \LaTeX{} is widely used in academia for the communication and publication of scientific documents in many fields, including mathematics, physics, computer science, statistics, economics and political science.
+\item \LaTeX{} can be used as a standalone document preparation system or as an intermediate format.
+\item \LaTeX{} is intended to provide a high-level language that accesses the power of TeX in an easier way for writers.
+\end{enumerate}
+\end{frame}
+
+\setbeamertemplate{logo}{}
+\begin{frame}
+\centering \Huge
+Thank You! :)
+\end{frame}
+
+\end{document}
